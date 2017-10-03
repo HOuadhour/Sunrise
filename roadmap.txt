@@ -1,0 +1,42 @@
+
+******** WORKING
+can't set time interval in the task completed outside more than the duration
+
+
+######## DONE
+the user can't start a task in future dates #
+add 100 points for every completed task and -50 points for every uncompleted or deleted task # 
+can't set time in the edit function less than the elapsedTime #
+Change the icons of the toolbar #
+Reimplement the iCompletedOutside #
+add notes to the task details #
+Reimplement the preferences dialog #
+edit the editTask, prevent the user from changing the taskName to a task that already exists #
+get the title setting when we change something #
+prevent user from opening bad files #
+Create the analysis table #
+copy single or mutiple tasks #
+Finish the taskFinished #
+Add notes to a task properties #
+start tracking time when the user choose to start doing a task #
+create option for showing the completed task #
+creating editTask function #
+reimplement the the deleteTaskFunction can't deleted tasks in a past dates #
+create a dialog for reseting the database #
+create the save as function #
+The user has the ability to open the file from another place #
+The user has the ability to create a new database in a different place #
+The user has the ability to change the default path of the data #
+reimplement the deleteTaskFunction #
+Create a toolbar #
+Change duration to a spinbox #
+Change the task entry to LineEdit with a dropdown option for previous added tasks #
+Create a preference dialog #
+Change the save_file and load_file to a method inside the class, and change the name to camelCase #
+Change the DATA to self.data #
+add multiple selection to the task table #
+change the style of the buttons to the black may be #
+
+
+-------- SOON
+Set the icon for the dialog and the mainwindow

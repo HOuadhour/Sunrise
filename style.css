@@ -1,0 +1,194 @@
+QLabel {
+	color: #000000;
+	/* font-weight: bold;
+	font-size: 15px; */
+}
+
+
+
+/* ############################################## */
+
+
+
+QPushButton {
+    border-radius: 4px;
+    background-color: #1c1c1c;
+    color: white;
+    font-weight: bold;
+    height: 25px;
+    width: 100px;
+}
+
+QPushButton::hover {
+    background-color: #2b2b2b;
+}
+
+QPushButton::pressed {
+    background-color: #0c0c0c;
+}
+
+QPushButton::disabled {
+    background-color: #888a85;
+}
+
+/* ############################################## */
+
+QPushButton#noDurationButton {
+    border-radius: 4px;
+    background-color: #ff0033;
+    color: white;
+    font-weight: bold;
+    height: 25px;
+    width: 100px;
+}
+
+QPushButton#noDurationButton::checked {
+    background-color: #af0023;
+}
+
+/* ############################################## */
+
+QSpinBox#durationEntry{
+	height: 25px;
+}
+
+/* ############################################## */
+
+QSpinBox#durationEditedEntry{
+    height: 25px;
+}
+
+/* ############################################## */
+
+/* QPushButton#addTaskButton { */
+/* 	border-radius: 4px; */
+/* 	background-color: #0091FF; */
+/* 	color: white; */
+/* 	font-weight: bold; */
+/* 	height: 25px; */
+/* 	width: 100px; */
+/* } */
+
+/* QPushButton#addTaskButton::hover { */
+/* 	background-color: #38A9FF; */
+/* } */
+
+/* QPushButton#addTaskButton::pressed { */
+/* 	background-color: #0073FF; */
+/* } */
+
+/* QPushButton#addTaskButton::disabled { */
+/* 	border-radius: 4px; */
+/* 	background-color: #414141; */
+/* 	color: white; */
+/* 	font-weight: bold; */
+/* 	height: 25px; */
+/* } */
+
+/* ############################################## */
+
+QPushButton#resetDataButton {
+	border-radius: 4px;
+	background-color: #ff2424;
+	color: white;
+	font-weight: bold;
+	height: 25px;
+	width: 100px;
+}
+
+QPushButton#resetDataButton::hover {
+	background-color: #ff4949;
+}
+
+QPushButton#resetDataButton::pressed {
+	background-color: #ff0000;
+}
+
+QPushButton#resetDataButton::disabled {
+	border-radius: 4px;
+	background-color: #414141;
+	color: white;
+	font-weight: bold;
+	height: 25px;
+}
+
+/* ############################################## */
+
+/* QPushButton#closeButton { */
+/* 	border-radius: 4px; */
+/* 	background-color: #f57900; */
+/* 	color: white; */
+/* 	font-weight: bold; */
+/* 	height: 25px; */
+/* 	width: 100px; */
+/* } */
+
+/* QPushButton#closeButton::hover { */
+/* 	background-color: #fcaf3e; */
+/* } */
+
+/* QPushButton#closeButton::pressed { */
+/* 	background-color: #ce5c00; */
+/* } */
+
+/* QPushButton#closeButton::disabled { */
+/* 	border-radius: 4px; */
+/* 	background-color: #414141; */
+/* 	color: white; */
+/* 	font-weight: bold; */
+/* 	height: 25px; */
+/* } */
+
+/* ############################################## */
+
+/* QPushButton#deleteTaskButton { */
+/*     border-radius: 4px; */
+/*     background-color: #f57900; */
+/*     color: white; */
+/*     font-weight: bold; */
+/*     height: 25px; */
+/*     width: 100px; */
+/* } */
+
+/* QPushButton#deleteTaskButton::hover { */
+/*     background-color: #fcaf3e; */
+/* } */
+
+/* QPushButton#deleteTaskButton::pressed { */
+/*     background-color: #ce5c00; */
+/* } */
+
+/* QPushButton#deleteTaskButton::disabled { */
+/*     border-radius: 4px; */
+/*     background-color: #414141; */
+/*     color: white; */
+/*     font-weight: bold; */
+/*     height: 25px; */
+/* } */
+
+/* ############################################## */
+
+/* QPushButton#editTaskButton { */
+/* 	border-radius: 4px; */
+/* 	background-color: #73d216; */
+/* 	color: white; */
+/* 	font-weight: bold; */
+/* 	height: 25px; */
+/* 	width: 100px; */
+/* } */
+
+/* QPushButton#editTaskButton::hover { */
+/* 	background-color: #8ae234; */
+/* } */
+
+/* QPushButton#editTaskButton::pressed { */
+/* 	background-color: #4e9a06; */
+/* } */
+
+/* QPushButton#editTaskButton::disabled { */
+/* 	border-radius: 4px; */
+/* 	background-color: #414141; */
+/* 	color: white; */
+/* 	font-weight: bold; */
+/* 	height: 25px; */
+/* } */

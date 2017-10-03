@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>tablePropertiesDlg</class>
+ <widget class="QDialog" name="tablePropertiesDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>312</width>
+    <height>227</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Table Properties</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="1">
+    <widget class="QCheckBox" name="checkBox">
+     <property name="text">
+      <string>Show table's grid (border line)</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QComboBox" name="comboBox">
+     <item>
+      <property name="text">
+       <string>NoPen</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SolidLine</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DashLine</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DotLine</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DashDotLine</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DashDotDotLine</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
