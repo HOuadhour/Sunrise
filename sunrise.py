@@ -1155,6 +1155,9 @@ class MyApp(QtWidgets.QMainWindow):
             dayFilter][0][row][1]
         # add the stoppedTime of the task to the task properties
         stoppedTime = datetime.today()
+
+        # add the current day to database["lastWorkingDay"]
+        self.database["lastWorkingDay"] = stoppedTime
         self.database["tasks"][yearFilter][monthFilter][
             dayFilter][0][row][11].append(stoppedTime)
         oldElapsedTime = self.database["tasks"][yearFilter][monthFilter][
