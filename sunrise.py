@@ -2875,7 +2875,6 @@ class MyApp(QtWidgets.QMainWindow):
         #  Open the addTask Dialog if the add button is pressed
 
         self.test = self.timer2.remainingTime()
-        print(self.test)
         # set the current day to date entry
         self.addTaskDlg.ui.dateEntry.setDate(QtCore.QDate.currentDate())
         self.addTaskDlg.ui.dateEntry.setMinimumDate(QtCore.QDate.currentDate())
