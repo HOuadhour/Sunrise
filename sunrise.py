@@ -2044,7 +2044,6 @@ class MyApp(QtWidgets.QMainWindow):
         # append the result of the day and the average score to the series
         for count in range(len(totalPointsList)):
             self.series.append(count+1, totalPointsList[count])
-        self.axisY.setMax(100)
         self.axisY.setLabelFormat("%d Pt")
         # add the self.series to chart
         self.chart.addSeries(self.series)
