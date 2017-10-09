@@ -22,3 +22,6 @@ __pycache__/
 
 # add the roadmap.txt
 roadmap.txt
+
+# add the regenerateUiToPy.sh
+regenerateUiToPy.sh
