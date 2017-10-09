@@ -1387,7 +1387,7 @@ class MyApp(QtWidgets.QMainWindow):
             self.mainWindow.copyTaskButton.setEnabled(False)
             self.mainWindow.startTaskButton.setEnabled(False)
             self.mainWindow.iCompletedButton.setEnabled(False)
-            self.mainWindow.iFinishedItButton.setEnabled(False)
+            self.mainWindow.iFinishedItButton.setVisible(False)
 
     def checkDatabaseAndConfig(self):
 
