@@ -444,6 +444,8 @@ class MyApp(QtWidgets.QMainWindow):
         self.setTableAlternatingRowC()
         self.mainWindow.remainingProgressBar.setVisible(False)
         self.mainWindow.elapsedProgressBar.setVisible(False)
+        # disable/enable some buttons
+        self.changeButtonsStatus()
 
     def reviveTaskFunction(self):
         # We call this function when the user double clicked a completedTask
@@ -1385,6 +1387,7 @@ class MyApp(QtWidgets.QMainWindow):
             self.mainWindow.copyTaskButton.setEnabled(False)
             self.mainWindow.startTaskButton.setEnabled(False)
             self.mainWindow.iCompletedButton.setEnabled(False)
+            self.mainWindow.iFinishedItButton.setEnabled(False)
 
     def checkDatabaseAndConfig(self):
 
