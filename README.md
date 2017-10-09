@@ -109,3 +109,8 @@ We open the `terminal` and type:
 $ sudo pip3 install PyQt5
 $ sudo pip3 install PyQtChart
 ```
+
+---
+### How To Use Sunrise
+We have create a simple wiki for you, to illustrate how to use the program.
+You can click here [Sunrise Wiki](https://github.com/HOuadhour/Sunrise/wiki)
