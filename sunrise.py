@@ -887,7 +887,7 @@ class MyApp(QtWidgets.QMainWindow):
         temp = self.preferencesDlg.ui.showTableGrid.isChecked()
         self.configFile["showTableGrid"][index] = temp
         # get the value of the grid style
-        temp = self.preferencesDlg.ui.tableAlternatingRowC.currentText()
+        temp = self.preferencesDlg.ui.tableGridStyle.currentText()
         self.configFile["tableGridStyle"][index] = temp
         # get the value of set alternating row colors
         temp = self.preferencesDlg.ui.tableAlternatingRowC.isChecked()
