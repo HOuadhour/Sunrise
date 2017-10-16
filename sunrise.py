@@ -3364,23 +3364,23 @@ class MyApp(QtWidgets.QMainWindow):
         if sys.platform.startswith("win"):
             # add default path of the configFile
             self.configFile["defaultConfigPath"] = self.homeDirectory + \
-                "\AppData\Local\Sunrise By H'Coder\.configFile"
+                "\AppData\Local\HOuadhour\Sunrise\.configFile"
             # add default path of the database
             self.configFile["defaultDatabasePath"] = self.homeDirectory + \
-                "\Documents\Sunrise By H'Coder\database"
+                "\Documents\HOuadhour\Sunrise\database"
             # add the current path of the database
             self.configFile["currentPath"] = self.homeDirectory + \
-                "\Documents\Sunrise By H'Coder\database"
+                "\Documents\HOuadhour\Sunrise\database"
         else:
             # add default path of the configFile
             self.configFile["defaultConfigPath"] = self.homeDirectory + \
-                "/.config/Sunrise By H'Coder/.configFile"
+                "/.config/HOuadhour/Sunrise/.configFile"
             # add default path of the database
             self.configFile["defaultDatabasePath"] = self.homeDirectory + \
-                "/Documents/Sunrise By H'Coder/database"
+                "/Documents/HOuadhour/Sunrise/database"
             # add the current path of the database
             self.configFile["currentPath"] = self.homeDirectory + \
-                "/Documents/Sunrise By H'Coder/database"
+                "/Documents/HOuadhour/Sunrise/database"
         # get the default path of the configFile
         self.defaultConfigPath = self.configFile["defaultConfigPath"]
         # get the default path of the database
