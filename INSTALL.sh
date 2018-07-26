@@ -10,6 +10,8 @@ if [ -d $HOME/.cache/Sunrise ]; then
 fi
 git clone https://github.com/HOuadhour/Sunrise.git
 
+echo "Adding the execute attribute of sunrise to the current user"
+chmod u+x $HOME/.cache/Sunrise/sunrise.pyw
 echo ""
 echo "Creating a symlink of sunrise in /usr/local/bin"
 echo ""
