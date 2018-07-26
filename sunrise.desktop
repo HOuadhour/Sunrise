@@ -5,4 +5,4 @@ Name=Sunrise
 GenericName=Schedule & Todo List Program
 Comment=Sunrise
 Icon=$HOME/.cache/Sunrise/icons/sunrise.svg
-Exec="$HOME/.cache/Sunrise/sunrise.pyw"
+Exec=$HOME/.cache/Sunrise/sunrise.pyw
