@@ -105,8 +105,16 @@ You can use your package manager, and installing the package.
 ---
 After installing `pip` or we need to do is to run these commands.
 We open the `terminal` and type:
+
+> It is recommended to install the `pyqt5` package from the main distro repo.
+
 ```sh
-$ sudo pip3 install PyQt5
+$ # Arch Users
+$ sudo pacman -Sy python-pyqt5
+```
+
+```sh
+$ sudo pip3 install PyQt5 # use in case you don't have pyqt5 in your main distro repo
 $ sudo pip3 install PyQtChart
 ```
 
