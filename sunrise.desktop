@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Type=Application
 Name=Sunrise
-GenericName=Schedule & Todo List Program
+GenericName=Schedule and a To-Do List Program
 Comment=Sunrise
-Icon=$HOME/.cache/Sunrise/icons/sunrise.svg
-Exec=$HOME/.cache/Sunrise/sunrise.pyw
+Icon=/opt/Sunrise/icons/sunrise.svg
+Exec=/opt/Sunrise/sunrise.pyw

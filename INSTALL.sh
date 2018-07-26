@@ -1,17 +1,17 @@
 #!/usr/bin/bash
 echo ""
-echo "Changing directoy to $HOME/.cache"
+echo "Changing directory to /opt"
 echo ""
-cd $HOME/.cache
+cd /opt
 
-if [ -d $HOME/.cache/Sunrise ]; then
+if [ -d /opt/Sunrise ]; then
     echo "Old directory has been found, and it has been deleted."
-    rm -rf $HOME/.cache/Sunrise 
+    sudo rm -rf /opt/Sunrise
 fi
-git clone https://github.com/HOuadhour/Sunrise.git
+sudo git clone https://github.com/HOuadhour/Sunrise.git
 
 echo "Adding the execute attribute of sunrise to the current user"
-chmod u+x $HOME/.cache/Sunrise/sunrise.pyw
+sudo chmod u+x /opt/Sunrise/sunrise.pyw
 echo ""
 echo "Creating a symlink of sunrise in /usr/local/bin"
 echo ""
@@ -20,7 +20,7 @@ if [ -L /usr/local/bin/sunrise ]; then
     echo ""
     sudo rm -rf /usr/local/bin/sunrise
 fi
-sudo ln -s $HOME/.cache/Sunrise/sunrise.pyw /usr/local/bin/sunrise
+sudo ln -s /opt/Sunrise/sunrise.pyw /usr/local/bin/sunrise
 echo "Symlink has been created successfully."
 echo ""
  
@@ -29,10 +29,9 @@ echo ""
 if [ -f $HOME/.local/share/applications/sunrise.desktop ]; then
     echo "Old desktop file has been found, and it has been deleted."
     echo ""
-    sudo rm -rf $HOME/.local/share/applications/sunrise.desktop
+    rm -rf $HOME/.local/share/applications/sunrise.desktop
 fi
-cp $HOME/.cache/Sunrise/sunrise.desktop $HOME/.local/share/applications/
+cp /opt/Sunrise/sunrise.desktop $HOME/.local/share/applications/
 echo "Adding the execute attribute of the file to the current user"
 echo ""
 chmod u+x $HOME/.local/share/applications/sunrise.desktop
-
