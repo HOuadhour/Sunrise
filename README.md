@@ -8,6 +8,20 @@ For that reason we have choosed to name the program **Sunrise**.
 At the moment we don't have binaries versions neither for GNU/Linux nor Windows.
 So no desktop icon shortcuts, all of these steps you have to do it alone.
 
+## Installing Sunrise
+Before we start installing the application we must install `git` and `wget`
+### Installing git and wget
+
+```sh
+$ # Arch users
+$ sudo pacman -Sy --needed git wget
+```
+
+### Download the install script
+```sh
+sh -c "$(wget https://raw.githubusercontent.com/HOuadhour/sunrise/master/INSTALL.sh -O -)"
+```
+
 ---
 # Prerequisites
 To get this program up and running.
@@ -92,7 +106,7 @@ To install `PyQt5` we have to run the same commands, but we have first to instal
 ##### Arch Linux
 Installing `pip` by typing this command in the `terminal`.
 ```sh
-$ sudo pacman -S python-pip
+$ sudo pacman -Sy --needed python-pip
 ```
 ##### Ubuntu & Linux Mint
 Installing `pip` by typing this command in the `terminal`.
@@ -110,7 +124,7 @@ We open the `terminal` and type:
 
 ```sh
 $ # Arch Users
-$ sudo pacman -Sy python-pyqt5
+$ sudo pacman -Sy --needed python-pyqt5
 ```
 
 ```sh
@@ -119,6 +133,7 @@ $ sudo pip3 install PyQtChart
 ```
 
 ---
+
 ### How To Use Sunrise
 We have create a simple wiki for you, to illustrate how to use the program.
 You can click here [Sunrise Wiki](https://github.com/HOuadhour/Sunrise/wiki)
