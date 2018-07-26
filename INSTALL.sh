@@ -10,8 +10,8 @@ if [ -d /opt/Sunrise ]; then
 fi
 sudo git clone https://github.com/HOuadhour/Sunrise.git
 
-echo "Adding the execute attribute of sunrise to the current user"
-sudo chmod +x /opt/Sunrise/sunrise.pyw
+echo "Adding the execute attribute of sunrise to all users"
+sudo chmod a+x /opt/Sunrise/sunrise.pyw
 echo ""
 echo "Creating a symlink of sunrise in /usr/local/bin"
 echo ""
@@ -32,6 +32,6 @@ if [ -f $HOME/.local/share/applications/sunrise.desktop ]; then
     rm -rf $HOME/.local/share/applications/sunrise.desktop
 fi
 cp /opt/Sunrise/sunrise.desktop $HOME/.local/share/applications/
-echo "Adding the execute attribute of the file to the current user"
+echo "Adding the execute attribute of the file to all users"
 echo ""
-chmod +x $HOME/.local/share/applications/sunrise.desktop
+chmod a+x $HOME/.local/share/applications/sunrise.desktop
