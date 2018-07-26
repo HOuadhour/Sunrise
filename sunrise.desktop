@@ -6,3 +6,4 @@ GenericName=Schedule and a To-Do List Program
 Comment=Sunrise
 Icon=/opt/Sunrise/icons/sunrise.svg
 Exec=/opt/Sunrise/sunrise.pyw
+Path=/opt/Sunrise/
