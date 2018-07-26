@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Sunrise
+GenericName=Schedule & Todo List Program
+Comment=Sunrise
+Icon=$HOME/.cache/Sunrise/icons/sunrise.svg
+Exec="$HOME/.cache/Sunrise/sunrise.pyw"
