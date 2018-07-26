@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-# Email: t3knician@protonmail.com
+
+# Email: HOuadhour@yandex.com
 # Twitter: @HOuadhour
+# LinkedIn: linkedin.com/in/HOuadhour
+# Telegram: @HOuadhour
 
 # The QtCore module contains the core non GUI functionality.  The QtGui
 # contains classes for windowing system integration, event handling, 2D
