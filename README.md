@@ -24,13 +24,13 @@ It is recommended to download the same version or higher, but you can work with 
 but it must be the version 3.x not the version 2.x.
 * We open [Python Website](https://www.python.org/downloads/windows/) and download the corresponding version 32bit or 64bit.
 
-![1](https://s5.postimg.org/rxg6u25o7/Screenshot_2017-10-09_14-51-34.png)
+![1](https://s5.postimg.cc/rxg6u25o7/Screenshot_2017-10-09_14-51-34.png)
 
 * After the download process complete, we open the file and Install `Python`.
 * After the installation process complete, open your `cmd` and type `python --version`.
 * If you get an answer similar to this, we are good to move to the next step.
 
-![2](https://s5.postimg.org/ie6i0dcyf/Capture.png)
+![2](https://s5.postimg.cc/ie6i0dcyf/Capture.png)
 
 ---
 ### Installing PyQt
@@ -39,7 +39,7 @@ by opening the `cmd` as an administrator and type this command.
 ```cmd
 pip install PyQt5
 ```
-![3](https://s5.postimg.org/o2csrc9lz/Capture3.png)
+![3](https://s5.postimg.cc/o2csrc9lz/Capture3.png)
 After the download and installation process complete, we move to the next step.
 
 ---
@@ -48,7 +48,7 @@ We open the `cmd` as an administrator and type this command.
 ```cmd
 pip install PyQtChart
 ```
-![4](https://s5.postimg.org/pu5rm9ntz/Capture4.png)
+![4](https://s5.postimg.cc/pu5rm9ntz/Capture4.png)
 After we finnish all these steps we are ready to run the program but before that, let's check our installation.
 
 Open `cmd` and type `python`.
@@ -57,7 +57,7 @@ Then you will get a screen like this, type the following code.
 >>> from PyQt5 import QtChart
 >>>
 ```
-![5](https://s5.postimg.org/kvi97rew7/Capture5.png)
+![5](https://s5.postimg.cc/kvi97rew7/Capture5.png)
 If you get an error, make sure you did all the steps correctly.
 
 ---
