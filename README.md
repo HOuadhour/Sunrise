@@ -12,13 +12,13 @@ So no desktop icon shortcuts, all of these steps you have to do it alone.
 Before we start installing the application we must install `git` and `wget`
 ### Installing git and wget
 
-```sh
+```bash
 $ # Arch users
 $ sudo pacman -Sy --needed git wget
 ```
 
 ### Download the install script
-```sh
+```bash
 sh -c "$(wget https://raw.githubusercontent.com/HOuadhour/sunrise/master/INSTALL.sh -O -)"
 ```
 
@@ -29,6 +29,8 @@ We have to install some programs and libraries,
 * `Python3`
 * `PyQt5`
 * `PyQtChart5`
+* `SIP`
+* `Qt5-Charts`
 
 ---
 ## Windows Users
@@ -79,20 +81,20 @@ If you get an error, make sure you did all the steps correctly.
 ### Installing Python
 Most of Linux distrubutions comes with two versions of `python` already installed for you.
 #### Arch Linux Users
-The default version of `python` for **Arch Linux** unlike other distrubutions is the version 3.
+The default version of `python` for **Arch Linux** unlike other distributions is the version 3.
 So if we type:
-```sh
+```bash
 $ python3 --version
 $ python --version
 ```
 It will give the same result, to get the version of `python2` in **Arch Linux** You have to type:
-```sh
+```bash
 python2 --version
 ```
 #### Other Distros
 The default version of `python` for **Ubuntu** and others is the version 2.
 So if we type:
-```sh
+```bash
 $ python3 --version
 $ python --version
 ```
@@ -100,35 +102,80 @@ We will get a different result.
 
 ---
 ### Installing PyQt and PyQtChart
-To install `PyQt5` we have to run the same commands, but we have first to install `pip`.
+To Install `PyQt5` and `PyQtChart` on Linux system we have two methods.
+**I recommend Using the first method**
+#### First Method (Recommended)
+We will install the packages using our package manager in our distro.
+
+We will take Arch as an example, you can use your own distro and your own package manager.
+
+But let's first uninstall the packages with `pip`.
+**Run command twice if it's necessary to check if the package is uninstalled**
+
+```bash
+$ sudo pip uninstall PyQt5
+$ sudo pip uninstall PyQtChart
+$ sudo pip uninstall sip
+$ sudo pip uninstall PyQt5-sip
+```
+---
+
+**Run this command again if you get an error.**
+
+```bash
+$ sudo pacman -Sy python-pyqt5 sip python-sip python-sip-pyqt5 qt5-charts
+```
+
+After this we will have to download the `PyQtChart` source code from the [Official Website](https://www.riverbankcomputing.com/software/pyqtchart/download)
+![6](https://s5.postimg.cc/686xaftvr/07272018-094120.png)
+
+After that we will compile our package.
+
+Navigate to where you download the file, let's say the downloads folder.
+
+```bash
+$ cd $HOME/Downloads
+```
+Check for file existance by typing `ls -l`.
+
+Now let's extract, compile and install the package.
+**Don't forget to change the name of the file if you have another name or other version**
+
+```bash
+$ tar --gzip -xvf PyQtChart_gpl-5.11.2.tar.gz # Extracting files
+$ cd PyQtChart_gpl-5.11.2
+$ python3 configure.py
+$ make
+$ sudo make install
+```
+**Congratulations on installing!**
+
+#### Second Method
+To install `PyQt5` we have to run the same commands as windows, but we have first to install `pip`.
 
 #### Installing pip
 ##### Arch Linux
+
 Installing `pip` by typing this command in the `terminal`.
-```sh
+```bash
 $ sudo pacman -Sy --needed python-pip
 ```
+
 ##### Ubuntu & Linux Mint
 Installing `pip` by typing this command in the `terminal`.
-```sh
+```bash
 $ sudo apt install python3-pip
 ```
+
 #### Others
-You can use your package manager, and installing the package.
+You can use your package manager, and install the package.
 
 ---
 After installing `pip` or we need to do is to run these commands.
 We open the `terminal` and type:
 
-> It is recommended to install the `pyqt5` package from the main distro repo.
-
-```sh
-$ # Arch Users
-$ sudo pacman -Sy --needed python-pyqt5
-```
-
-```sh
-$ sudo pip3 install PyQt5 # use in case you don't have pyqt5 in your main distro repo
+```bash
+$ sudo pip3 install PyQt5 
 $ sudo pip3 install PyQtChart
 ```
 
