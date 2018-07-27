@@ -13,6 +13,9 @@ sudo git clone https://github.com/HOuadhour/Sunrise.git
 echo "Adding the execute attribute of sunrise to all users"
 sudo chmod a+x /opt/Sunrise/sunrise.pyw
 echo ""
+echo "Changing the path of style.css inside sunrise.pyw"
+sudo sed -i -e 's/style.css/\/opt\/Sunrise\/style.css/g' /opt/Sunrise/sunrise.pyw
+echo ""
 echo "Creating a symlink of sunrise in /usr/local/bin"
 echo ""
 if [ -L /usr/local/bin/sunrise ]; then
